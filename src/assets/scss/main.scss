@@ -924,6 +924,11 @@
 		> .inner {
 			@include vendor('flex-grow', '1');
 			margin: 0 0 ($size-header-pad * 0.5) 0;
+			h1 {
+				background-color: rgba(0,0,0,0.5);
+				padding-right: 1.5rem;
+				border-radius: 20px;
+			}
 		}
 
 		strong, b {

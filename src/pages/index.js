@@ -5,10 +5,10 @@ import Layout from '../components/layout'
 // import Lightbox from 'react-images'
 import Gallery from '../components/Gallery'
 
-import thumb01 from '../assets/images/thumbs/01.jpg'
-import thumb02 from '../assets/images/thumbs/02.jpg'
-import thumb03 from '../assets/images/thumbs/03.jpg'
-import thumb04 from '../assets/images/thumbs/04.jpg'
+import thumb01 from '../assets/images/thumbs/01.png'
+import thumb02 from '../assets/images/thumbs/02.png'
+import thumb03 from '../assets/images/thumbs/03.png'
+import thumb04 from '../assets/images/thumbs/04.png'
 import thumb05 from '../assets/images/thumbs/05.jpg'
 import thumb06 from '../assets/images/thumbs/06.jpg'
 
@@ -20,12 +20,12 @@ import full05 from '../assets/images/fulls/05.jpg'
 import full06 from '../assets/images/fulls/06.jpg'
 
 const DEFAULT_IMAGES = [
-    { id: '1', src: full01, thumbnail: thumb01, caption: 'Photo 1', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
-    { id: '2', src: full02, thumbnail: thumb02, caption: 'Photo 2', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
-    { id: '3', src: full03, thumbnail: thumb03, caption: 'Photo 3', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
-    { id: '4', src: full04, thumbnail: thumb04, caption: 'Photo 4', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
-    { id: '5', src: full05, thumbnail: thumb05, caption: 'Photo 5', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
-    { id: '6', src: full06, thumbnail: thumb06, caption: 'Photo 6', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'}
+    { id: '1', src: full01, thumbnail: thumb01, caption: 'Camp AZ', description: 'Campsite review made with JavaScript and NodeJS' },
+    { id: '2', src: full02, thumbnail: thumb02, caption: 'Beardly Robot', description: 'Robotics blog made with React and Gatsby JS' },
+    { id: '3', src: full03, thumbnail: thumb03, caption: 'RGB Color Guessing', description: 'Made with JavaScript and CSS' },
+    { id: '4', src: full04, thumbnail: thumb04, caption: 'Patatap Clone', description: 'Clone of Patatap made with Howler JS and Paper JS' },
+    // { id: '5', src: full05, thumbnail: thumb05, caption: 'Photo 5', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.' },
+    // { id: '6', src: full06, thumbnail: thumb06, caption: 'Photo 6', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.' }
 ];
 
 class HomeIndex extends React.Component {
@@ -45,44 +45,44 @@ class HomeIndex extends React.Component {
         this.handleClickImage = this.handleClickImage.bind(this);
     }
 
-    openLightbox (index, event) {
+    openLightbox(index, event) {
         event.preventDefault();
         this.setState({
             currentImage: index,
             lightboxIsOpen: true,
         });
     }
-    closeLightbox () {
+    closeLightbox() {
         this.setState({
             currentImage: 0,
             lightboxIsOpen: false,
         });
     }
-    gotoPrevious () {
+    gotoPrevious() {
         this.setState({
             currentImage: this.state.currentImage - 1,
         });
     }
-    gotoNext () {
+    gotoNext() {
         this.setState({
             currentImage: this.state.currentImage + 1,
         });
     }
-    handleClickImage () {
+    handleClickImage() {
         if (this.state.currentImage === this.props.images.length - 1) return;
 
         this.gotoNext();
     }
 
     render() {
-        const siteTitle = "Gatsby Starter - Strata"
-        const siteDescription = "Site description"
+        const siteTitle = "Tristan Stutzman Portfolio"
+        const siteDescription = "A portfolio site to dispaly my work"
 
         return (
             <Layout>
                 <Helmet>
-                        <title>{siteTitle}</title>
-                        <meta name="description" content={siteDescription} />
+                    <title>{siteTitle}</title>
+                    <meta name="description" content={siteDescription} />
                 </Helmet>
 
                 <div id="main">
@@ -90,7 +90,7 @@ class HomeIndex extends React.Component {
                     <section id="one">
                         <header className="major">
                             <h2>Ipsum lorem dolor aliquam ante commodo<br />
-                            magna sed accumsan arcu neque.</h2>
+                                magna sed accumsan arcu neque.</h2>
                         </header>
                         <p>Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.</p>
                         <ul className="actions">
