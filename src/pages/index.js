@@ -31,51 +31,6 @@ const DEFAULT_IMAGES = [
 ];
 
 class HomeIndex extends React.Component {
-
-    // constructor() {
-    //     super();
-
-    //     this.state = {
-    //         lightboxIsOpen: false,
-    //         currentImage: 0,
-    //     };
-
-    //     this.closeLightbox = this.closeLightbox.bind(this);
-    //     this.gotoNext = this.gotoNext.bind(this);
-    //     this.gotoPrevious = this.gotoPrevious.bind(this);
-    //     this.openLightbox = this.openLightbox.bind(this);
-    //     this.handleClickImage = this.handleClickImage.bind(this);
-    // }
-
-    // openLightbox(index, event) {
-    //     event.preventDefault();
-    //     this.setState({
-    //         currentImage: index,
-    //         lightboxIsOpen: true,
-    //     });
-    // }
-    // closeLightbox() {
-    //     this.setState({
-    //         currentImage: 0,
-    //         lightboxIsOpen: false,
-    //     });
-    // }
-    // gotoPrevious() {
-    //     this.setState({
-    //         currentImage: this.state.currentImage - 1,
-    //     });
-    // }
-    // gotoNext() {
-    //     this.setState({
-    //         currentImage: this.state.currentImage + 1,
-    //     });
-    // }
-    // handleClickImage() {
-    //     if (this.state.currentImage === this.props.images.length - 1) return;
-
-    //     this.gotoNext();
-    // }
-
     render() {
         const siteTitle = "Tristan Stutzman Portfolio"
         const siteDescription = "A portfolio site to dispaly my work"
@@ -88,36 +43,38 @@ class HomeIndex extends React.Component {
                 </Helmet>
 
                 <div id="main">
-
-                    {/* <section id="one">
-                        <header className="major">
-                            <h2>Ipsum lorem dolor aliquam ante commodo<br />
-                                magna sed accumsan arcu neque.</h2>
-                        </header>
-                        <p>Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.</p>
-                        <ul className="actions">
-                            <li><a href="#" className="button">Learn More</a></li>
-                        </ul>
-                    </section> */}
-
                     <section id="one">
                         <h2>Recent Work</h2>
-
-                        <Work
-                            name="Camp AZ"
-                            imgSrc={thumb01}
-                            desc="Arizona Camping review site made with JavaScript, and NodeJS"
-                            link="https://thawing-gorge-99023.herokuapp.com/"
-                            source="https://github.com/thebeardly/camp_az"
-                        />
-
-                        {/* <Gallery images={DEFAULT_IMAGES.map(({ id, src, thumbnail, caption, description }) => ({
-                            src,
-                            thumbnail,
-                            caption,
-                            description
-                        }))} /> */}
-
+                        <div className="projects">
+                            <Work
+                                name="Camp AZ"
+                                imgSrc={thumb01}
+                                desc="Arizona Camping review site made with JavaScript, and NodeJS"
+                                link="https://thawing-gorge-99023.herokuapp.com/"
+                                source="https://github.com/thebeardly/camp_az"
+                            />
+                            <Work
+                                name="Camp AZ"
+                                imgSrc={thumb01}
+                                desc="Arizona Camping review site made with JavaScript, and NodeJS"
+                                link="https://thawing-gorge-99023.herokuapp.com/"
+                                source="https://github.com/thebeardly/camp_az"
+                            />
+                            <Work
+                                name="Camp AZ"
+                                imgSrc={thumb01}
+                                desc="Arizona Camping review site made with JavaScript, and NodeJS"
+                                link="https://thawing-gorge-99023.herokuapp.com/"
+                                source="https://github.com/thebeardly/camp_az"
+                            />
+                            <Work
+                                name="Camp AZ"
+                                imgSrc={thumb01}
+                                desc="Arizona Camping review site made with JavaScript, and NodeJS"
+                                link="https://thawing-gorge-99023.herokuapp.com/"
+                                source="https://github.com/thebeardly/camp_az"
+                            />
+                        </div>
                         <ul className="actions">
                             <li><a href="https://github.com/thebeardly" target="_blank" className="button">View Github</a></li>
                         </ul>
