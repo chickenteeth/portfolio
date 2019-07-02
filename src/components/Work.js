@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import './Work.module.scss'
+import '../assets/scss/Work.module.scss'
 
 class Work extends Component {
     render() {
@@ -11,8 +11,8 @@ class Work extends Component {
                     </a>
                 </div>
                 <h2 className="Workcard-title">{this.props.name}</h2>
-                <div className="Workcard-data">Description: {this.props.desc}</div>
-                <div className="Workcard-data"><a href={this.props.source} target="_blank"><span className="icon fa-github"></span></a></div>
+                <div className="Workcard-desc">Description: {this.props.desc}</div>
+                <div className="Workcard-source"><a href={this.props.source} target="_blank"><i class="fab fa-github"></i></a></div>
             </div>
         )
     }
