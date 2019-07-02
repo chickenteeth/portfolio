@@ -1,9 +1,11 @@
 import React from 'react'
 import Helmet from 'react-helmet'
+import Work from '../components/Work'
 
 import Layout from '../components/layout'
 // import Lightbox from 'react-images'
-import Gallery from '../components/Gallery'
+// import Gallery from '../components/Gallery'
+import '../components/Work.module.scss'
 
 import thumb01 from '../assets/images/thumbs/01.png'
 import thumb02 from '../assets/images/thumbs/02.png'
@@ -30,49 +32,49 @@ const DEFAULT_IMAGES = [
 
 class HomeIndex extends React.Component {
 
-    constructor() {
-        super();
+    // constructor() {
+    //     super();
 
-        this.state = {
-            lightboxIsOpen: false,
-            currentImage: 0,
-        };
+    //     this.state = {
+    //         lightboxIsOpen: false,
+    //         currentImage: 0,
+    //     };
 
-        this.closeLightbox = this.closeLightbox.bind(this);
-        this.gotoNext = this.gotoNext.bind(this);
-        this.gotoPrevious = this.gotoPrevious.bind(this);
-        this.openLightbox = this.openLightbox.bind(this);
-        this.handleClickImage = this.handleClickImage.bind(this);
-    }
+    //     this.closeLightbox = this.closeLightbox.bind(this);
+    //     this.gotoNext = this.gotoNext.bind(this);
+    //     this.gotoPrevious = this.gotoPrevious.bind(this);
+    //     this.openLightbox = this.openLightbox.bind(this);
+    //     this.handleClickImage = this.handleClickImage.bind(this);
+    // }
 
-    openLightbox(index, event) {
-        event.preventDefault();
-        this.setState({
-            currentImage: index,
-            lightboxIsOpen: true,
-        });
-    }
-    closeLightbox() {
-        this.setState({
-            currentImage: 0,
-            lightboxIsOpen: false,
-        });
-    }
-    gotoPrevious() {
-        this.setState({
-            currentImage: this.state.currentImage - 1,
-        });
-    }
-    gotoNext() {
-        this.setState({
-            currentImage: this.state.currentImage + 1,
-        });
-    }
-    handleClickImage() {
-        if (this.state.currentImage === this.props.images.length - 1) return;
+    // openLightbox(index, event) {
+    //     event.preventDefault();
+    //     this.setState({
+    //         currentImage: index,
+    //         lightboxIsOpen: true,
+    //     });
+    // }
+    // closeLightbox() {
+    //     this.setState({
+    //         currentImage: 0,
+    //         lightboxIsOpen: false,
+    //     });
+    // }
+    // gotoPrevious() {
+    //     this.setState({
+    //         currentImage: this.state.currentImage - 1,
+    //     });
+    // }
+    // gotoNext() {
+    //     this.setState({
+    //         currentImage: this.state.currentImage + 1,
+    //     });
+    // }
+    // handleClickImage() {
+    //     if (this.state.currentImage === this.props.images.length - 1) return;
 
-        this.gotoNext();
-    }
+    //     this.gotoNext();
+    // }
 
     render() {
         const siteTitle = "Tristan Stutzman Portfolio"
@@ -87,7 +89,7 @@ class HomeIndex extends React.Component {
 
                 <div id="main">
 
-                    <section id="one">
+                    {/* <section id="one">
                         <header className="major">
                             <h2>Ipsum lorem dolor aliquam ante commodo<br />
                                 magna sed accumsan arcu neque.</h2>
@@ -96,24 +98,32 @@ class HomeIndex extends React.Component {
                         <ul className="actions">
                             <li><a href="#" className="button">Learn More</a></li>
                         </ul>
-                    </section>
+                    </section> */}
 
-                    <section id="two">
+                    <section id="one">
                         <h2>Recent Work</h2>
 
-                        <Gallery images={DEFAULT_IMAGES.map(({ id, src, thumbnail, caption, description }) => ({
+                        <Work
+                            name="Camp AZ"
+                            imgSrc={thumb01}
+                            desc="Arizona Camping review site made with JavaScript, and NodeJS"
+                            link="https://thawing-gorge-99023.herokuapp.com/"
+                            source="https://github.com/thebeardly/camp_az"
+                        />
+
+                        {/* <Gallery images={DEFAULT_IMAGES.map(({ id, src, thumbnail, caption, description }) => ({
                             src,
                             thumbnail,
                             caption,
                             description
-                        }))} />
+                        }))} /> */}
 
                         <ul className="actions">
-                            <li><a href="#" className="button">Full Portfolio</a></li>
+                            <li><a href="https://github.com/thebeardly" target="_blank" className="button">View Github</a></li>
                         </ul>
                     </section>
 
-                    <section id="three">
+                    <section id="two">
                         <h2>Get In Touch</h2>
                         <p>Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.</p>
                         <div className="row">
@@ -132,18 +142,17 @@ class HomeIndex extends React.Component {
                             <div className="4u 12u$(small)">
                                 <ul className="labeled-icons">
                                     <li>
-                                        <h3 className="icon fa-home"><span className="label">Address</span></h3>
-                                        1234 Somewhere Rd.<br />
-                                        Nashville, TN 00000<br />
+                                        <h3 className="icon fa-home"><span className="label">Location</span></h3>
+                                        Gilbert, AZ<br />
                                         United States
                                     </li>
-                                    <li>
+                                    {/* <li>
                                         <h3 className="icon fa-mobile"><span className="label">Phone</span></h3>
                                         000-000-0000
-                                    </li>
+                                    </li> */}
                                     <li>
                                         <h3 className="icon fa-envelope-o"><span className="label">Email</span></h3>
-                                        <a href="#">hello@untitled.tld</a>
+                                        <a href="mailto:tstutzman@beardlysoft.com">tstutzman@beardlysoft.com</a>
                                     </li>
                                 </ul>
                             </div>
