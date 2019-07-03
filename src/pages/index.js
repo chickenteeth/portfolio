@@ -77,7 +77,7 @@ class HomeIndex extends React.Component {
                                     </div>
                                 </form>
                                 <ul className="actions">
-                                    <li><input type="submit" value="Send Message" /></li>
+                                    <li><input type="submit" value="Send Message" className="special" /></li>
                                     <li><a href="https://github.com/thebeardly" target="_blank" className="button taco">View Resume</a></li>
                                 </ul>
                             </div>
