@@ -80,10 +80,11 @@ class HomeIndex extends React.Component {
                                         <div className="6u 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Email" /></div>
                                         <div className="12u"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
                                     </div>
+                                    <ul className="actions">
+                                        <li><input type="submit" value="Send Message" className="special sub-btn" /></li>
+                                        <li><a href="https://github.com/thebeardly" target="_blank" className="button sub-btn">View Resume</a></li>
+                                    </ul>
                                 </form>
-                                <ul className="actions">
-                                    <li><input type="submit" value="Send Message" className="special" /></li>
-                                </ul>
                             </div>
                             <div className="4u 12u$(small)">
                                 <ul className="labeled-icons">
