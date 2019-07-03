@@ -1,9 +1,13 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "tristan-stutzman-portfolio",
+  "description": "Tristan Stutzman Portfolio",
   "version": "1.0.0",
-  "author": "Hunter Chang",
+  "author": "Tristan Stutzman",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.19",
+    "@fortawesome/free-brands-svg-icons": "^5.9.0",
+    "@fortawesome/free-solid-svg-icons": "^5.9.0",
+    "@fortawesome/react-fontawesome": "^0.1.4",
     "gatsby": "^2.2.9",
     "gatsby-plugin-manifest": "^2.0.24",
     "gatsby-plugin-offline": "^2.0.25",
@@ -30,6 +34,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": ""
   }
 }
