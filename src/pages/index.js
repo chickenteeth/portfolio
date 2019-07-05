@@ -40,25 +40,25 @@ class HomeIndex extends React.Component {
                                 source="https://github.com/thebeardly/camp_az"
                             />
                             <Work
-                                name="Camp AZ"
+                                name="Beardly Robot"
                                 imgSrc={thumb02}
-                                desc="Arizona Camping review site made with JavaScript, and NodeJS"
-                                link="https://thawing-gorge-99023.herokuapp.com/"
-                                source="https://github.com/thebeardly/camp_az"
+                                desc="Blog made with React and GatsbyJS"
+                                link="https://beardlyblog.netlify.com/"
+                                source="https://github.com/thebeardly/gatsby-blog"
                             />
                             <Work
-                                name="Camp AZ"
+                                name="RGB Color Guess Game"
                                 imgSrc={thumb03}
-                                desc="Arizona Camping review site made with JavaScript, and NodeJS"
-                                link="https://thawing-gorge-99023.herokuapp.com/"
-                                source="https://github.com/thebeardly/camp_az"
+                                desc="Try to pick the right color based on the RGB values given"
+                                link="https://js-color-game.netlify.com/"
+                                source="https://github.com/thebeardly/color_picker_gamez"
                             />
                             <Work
-                                name="Camp AZ"
+                                name="Patatap Clone"
                                 imgSrc={thumb04}
-                                desc="Arizona Camping review site made with JavaScript, and NodeJS"
-                                link="https://thawing-gorge-99023.herokuapp.com/"
-                                source="https://github.com/thebeardly/camp_az"
+                                desc="Clone of the popular Patatap App made with PaperJS and HowlerJS libraries"
+                                link="https://ts-patatap-clone.netlify.com"
+                                source="https://github.com/thebeardly/patatap"
                             />
                         </div>
                     </section>
