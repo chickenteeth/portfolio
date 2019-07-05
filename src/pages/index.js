@@ -35,7 +35,7 @@ class HomeIndex extends React.Component {
                             <Work
                                 name="Camp AZ"
                                 imgSrc={thumb01}
-                                desc="Arizona Camping review site made with JavaScript, and NodeJS"
+                                desc="Arizona Camping review site made with BootStrap4, JavaScript, and NodeJS"
                                 link="https://thawing-gorge-99023.herokuapp.com/"
                                 source="https://github.com/thebeardly/camp_az"
                             />
