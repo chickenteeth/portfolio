@@ -6,6 +6,7 @@ import Layout from '../components/layout'
 // import Lightbox from 'react-images'
 // import Gallery from '../components/Gallery'
 import '../assets/scss/Work.module.scss'
+import '../../public/static/resume.pdf'
 
 import thumb01 from '../assets/images/thumbs/01.png'
 import thumb02 from '../assets/images/thumbs/02.png'
@@ -35,14 +36,14 @@ class HomeIndex extends React.Component {
                             <Work
                                 name="Camp AZ"
                                 imgSrc={thumb01}
-                                desc="Arizona Camping review site made with BootStrap4, JavaScript, and NodeJS"
+                                desc="Arizona Camping review site made with BootStrap4, JavaScript, NodeJS/Express and MongoDB"
                                 link="https://thawing-gorge-99023.herokuapp.com/"
                                 source="https://github.com/thebeardly/camp_az"
                             />
                             <Work
                                 name="Beardly Robot"
                                 imgSrc={thumb02}
-                                desc="Blog made with React and GatsbyJS"
+                                desc="Blog made with ReactJS, GatsbyJS and Contentful CMS"
                                 link="https://beardlyblog.netlify.com/"
                                 source="https://github.com/thebeardly/gatsby-blog"
                             />
@@ -82,7 +83,7 @@ class HomeIndex extends React.Component {
                                     </div>
                                     <ul className="actions">
                                         <li><input type="submit" value="Send Message" className="special sub-btn" /></li>
-                                        <li><a href="https://github.com/thebeardly" target="_blank" className="button sub-btn">View Resume</a></li>
+                                        <li><a href="https://app.box.com/s/zfcvr82js8s4p3s63s7a6d9dua7u7ojv" target="_blank" className="button sub-btn">View Resume</a></li>
                                     </ul>
                                 </form>
                             </div>
