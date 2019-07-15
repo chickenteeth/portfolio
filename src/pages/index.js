@@ -37,8 +37,8 @@ class HomeIndex extends React.Component {
                                 name="Recipe Search"
                                 imgSrc={thumb05}
                                 desc="Recipe search using Food2Fork API"
-                                link="https://sharp-khorana-864c3b.netlify.com"
-                                source="https://github.com/thebeardly/meal_planner"
+                                link="https://frosty-hopper-075632.netlify.com"
+                                source="https://github.com/thebeardly/recipes"
                             />
                             <Work
                                 name="Camp AZ"
