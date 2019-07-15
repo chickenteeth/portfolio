@@ -10,7 +10,7 @@ class Work extends Component {
                         <img src={this.props.imgSrc} alt={this.props.name} className="proj-thumb" />
                     </a>
                 </div>
-                <h2 className="Workcard-title">{this.props.name}</h2>
+                <h2 className="Workcard-title"><a href={this.props.link} target="_blank">{this.props.name}</a></h2>
                 <div className="Workcard-desc">{this.props.desc}</div>
                 <div className="Workcard-source"><a href={this.props.source} target="_blank" className="icon fa-github"></a></div>
             </div>

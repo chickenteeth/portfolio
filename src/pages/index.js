@@ -11,7 +11,7 @@ import thumb01 from '../assets/images/thumbs/01.png'
 import thumb02 from '../assets/images/thumbs/02.png'
 import thumb03 from '../assets/images/thumbs/03.png'
 import thumb04 from '../assets/images/thumbs/04.png'
-import thumb05 from '../assets/images/thumbs/05.jpg'
+import thumb05 from '../assets/images/thumbs/05.png'
 import thumb06 from '../assets/images/thumbs/06.jpg'
 
 
@@ -32,6 +32,13 @@ class HomeIndex extends React.Component {
                     <section id="one">
                         <h2>Recent Work</h2>
                         <div className="projects">
+                            <Work
+                                name="Recipe Search"
+                                imgSrc={thumb05}
+                                desc="Recipe search using Food2Fork API"
+                                link="https://sharp-khorana-864c3b.netlify.com"
+                                source="https://github.com/thebeardly/meal_planner"
+                            />
                             <Work
                                 name="Camp AZ"
                                 imgSrc={thumb01}
