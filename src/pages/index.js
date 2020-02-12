@@ -15,6 +15,8 @@ import thumb04 from '../assets/images/thumbs/04.png'
 import thumb05 from '../assets/images/thumbs/05.png'
 import thumb06 from '../assets/images/thumbs/06.jpg'
 
+import resume from '../assets/docs/Tristan Stutzman Resume - dev.pdf'
+
 class HomeIndex extends React.Component {
   render() {
     const siteTitle = 'Tristan Stutzman Portfolio'
@@ -117,7 +119,7 @@ class HomeIndex extends React.Component {
                     </li>
                     <li>
                       <a
-                        href="https://app.box.com/s/281n1zvq446iwbbt1rjqmgvgx6rthpyt"
+                        href={resume}
                         target="_blank"
                         className="button sub-btn"
                       >
