@@ -34,11 +34,11 @@ class HomeIndex extends React.Component {
             <h2>Recent Work</h2>
             <div className="projects">
               <Work
-                name="Recipe Search"
+                name="Quasar To Do"
                 imgSrc={thumb05}
-                desc="Recipe search using Food2Fork API"
-                link="https://frosty-hopper-075632.netlify.com"
-                source="https://github.com/thebeardly/recipes"
+                desc="To Do Applicaiton built with VueJS and the Quasar Framework"
+                link="https://beardlyquasar.netlify.com/"
+                source="https://github.com/thebeardly/quasar-todo"
               />
               <Work
                 name="Camp AZ"
